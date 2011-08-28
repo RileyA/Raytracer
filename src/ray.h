@@ -11,4 +11,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+#define min(A,B) A < B ? A : B
+#define max(A,B) A > B ? A : B
+
 #endif

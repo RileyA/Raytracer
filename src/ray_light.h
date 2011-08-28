@@ -50,13 +50,13 @@ struct light
 
 typedef struct light light;
 
-light* make_light_point(vec3 position, real att, color c);
+light* make_light_point(vec3 position, color c);
 light* make_light_spot(vec3 position);
 light* make_light_directional(vec3 position);
 light* make_pointlight(vec3 position);
 
 void lights_add(light* list, light* add);
-void lights_free(light* list, light* add);
+void lights_free(light* list);
 
 #endif
 
